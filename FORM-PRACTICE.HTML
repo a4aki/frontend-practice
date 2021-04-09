@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>APPLICATION FORM</h1>
+    <form name="employment" action="send.php" method="post">
+      <table>
+        <tr>
+          <td>employment APPLICATION</td>
+        </tr>
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" name="fname" maxlenght="50" /></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" name="lname " /></td>
+        </tr>
+        <tr>
+          <td>Position:</td>
+          <td>
+            <select name="Position">
+              <option value="AC">Acountant</option>
+              <option value="AD">Administrator</option>
+              <option value="SU">Supervisor</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Experience Level:</td>
+          <td>
+            <select name="Position">
+              <option value="EL">Entry Level</option>
+              <option value="AD">Some Experience</option>
+              <option value="SU">Very Experience</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Job Type:</td>
+          <td>
+            <input type="checkbox" name="ft" />Full-Time
+            <input type="checkbox" name="pt" />Part-Time
+            <input type="checkbox" name="pt" />Contract
+          </td>
+        </tr>
+        <tr>
+          <td>Employment Status</td>
+          <td>
+            <input type="radio" name="estatus" value="employed" />Employed
+            <input type="radio" name="estatus" value="unemployed" />Unemployed
+            <input type="radio" name="estatus" value="student" />Student
+          </td>
+        </tr>
+        <tr>
+          <td>Aditional Comments:</td>
+          <td>
+            <textarea name="comments" cols="45" rows="5"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" name="submit" value="Submit" />
+            <input type="reset" name="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
